@@ -1,0 +1,14 @@
+.Card {
+    padding-top: 100%;
+    position: relative;
+    border:1px solid #ccc;
+    border-radius:15px;
+    margin-bottom:10px;
+        img{
+            position: absolute;
+            top:0;
+            left:0;
+            height: 100%;
+            object-fit: contain;
+        }
+}

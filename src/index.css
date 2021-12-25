@@ -11,3 +11,87 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+/*grid*/
+
+.custom-grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, calc(calc(100% - calc(25px * 4 )) /5));
+  grid-column-gap: 25px;
+  grid-row-gap: 25px;
+}
+.custom-grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 30px;
+  text-align: center;
+}
+
+.custom-container{
+  max-width: 1440px;
+}
+
+@media only screen and (min-width: 1440px) {
+  .custom-container{
+    max-width: 1760px !important;
+    width: 100%;
+    display: block;
+    margin: auto;
+  }
+  .custom-container > div{
+    padding: 0 80px; 
+  }
+}
+
+@media only screen and (max-width: 1610px) {
+  .custom-grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, calc(calc(100% - calc(25px * 3 )) /4));
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .custom-container{
+    max-width: 1440px !important;
+    width: 100%;
+    display: block;
+    margin: auto;
+  }
+  .custom-container > div{
+    padding: 0 80px; 
+  }
+}
+
+@media only screen and (max-width: 1232px) {
+  .custom-grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, calc(calc(100% - calc(25px * 2 )) /3));
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+  }
+}
+
+@media only screen and (max-width: 1128px) {
+  .custom-container > div{
+    padding: 0 40px; 
+  }
+}
+
+@media only screen and (max-width: 878px) {
+  .custom-grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, calc(calc(100% - calc(25px * 1)) /2));
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+  }
+}
+
+@media only screen and (max-width: 744px) {
+  .custom-grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    grid-row-gap: 25px;
+  }
+}
